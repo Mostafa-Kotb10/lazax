@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .section-description {
+    @apply text-center text-[22px] leading-[30px] tracking-tight text-[#010D3E];
+  }
+
+  .logo-ticker-image {
+    @apply h-8 w-auto;
+  }
+
+  .section-heading-wrraper {
+    @apply mx-auto max-w-[540px];
+  }
+
+  .card {
+    @apply w-full max-w-xs rounded-3xl border-[#222222]/10 p-10 shadow-[0_7px_14px_#EAEAEA];
+  }
+}
+
+@layer utilities {
+  .bg-gradient-hero {
+    @apply bg-[radial-gradient(ellipse_200%_100%_at_bottom_left,#183EC2,#EAEEFE_100%)];
+  }
+
+  .bg-gradient-product {
+    @apply bg-gradient-to-b from-white to-[#D2DCFF];
+  }
+
+  .bg-gradient-popular {
+    @apply bg-[linear-gradient(to_right,#DD7DDF,#E1CD86,#BBCB92,#71C2EF,#3BFFFF,#DD7DDF,#E1CD86,#BBCB92,#71C2EF,#3BFFFF)];
+  }
+
+  .bg-logo-gradient {
+    @apply bg-[linear-gradient(to_right,#F87BFF,#FB92CF,#FFDD9B,#C2F0B1,#2FD8FE)] blur;
+  }
+}
